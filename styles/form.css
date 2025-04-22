@@ -1,0 +1,150 @@
+
+
+.title-box h1{
+  font-size: 40px;
+}
+
+.title-box p{
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.title-box{
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.details-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.details-name{
+  font-size: 14px;
+}
+
+.file-input{
+  height: 100px;
+  padding: 0;
+  margin: 0px;
+  position: absolute;
+  left: -1px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input-box{
+  background-color: rgba(96, 95, 95, 0.288);
+  color: rgba(135, 135, 135, 0.668);
+  font-family: Inconsolata;
+  width: 410px;
+  height: 100px;
+  border: 2px dashed rgba(135, 134, 134, 0.668);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* &:has(.file-input:hover){
+    background-color: rgba(96, 95, 95, 0.723);
+    outline: 2px dashed rgb(43, 43, 43);
+    outline-offset: -10px;
+  } */
+}
+/* added class when draging a file onto input */
+.file-input-box-over{
+  background-color: rgba(96, 95, 95, 0.723);
+  outline: 2px dashed rgb(43, 43, 43);
+  outline-offset: -10px;
+}
+
+.upload-icon{
+  height: 30px;
+  border: 1px solid rgba(79, 79, 79, 0.668);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 8px;
+  background-color: rgba(96, 95, 95, 0.288);
+}
+
+.upload-instruction-1{
+  font-size: 14px;
+  color: white;
+  opacity: 0.7;
+}
+
+.upload-instruction-2{
+  font-size: 11px;
+  color: white;
+  opacity: 0.7;
+}
+
+input{
+  background-color: rgba(96, 95, 95, 0.288);
+  color: white;
+  opacity: 0.7;
+  font-family: Inconsolata;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(79, 79, 79, 0.668);
+  border-radius: 10px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+input::placeholder{
+  font-family: Inconsolata;
+  color: white;
+  opacity: 0.7;
+}
+
+.generate-btn{
+  width: 104%;
+  height: 44px;
+  border-radius: 10px;
+  color: rgb(30, 1, 30);
+  background-color: hsl(7, 71%, 60%);
+  border: none;
+  font-family: Inconsolata;
+  font-weight: 700;
+  cursor: pointer;
+}
+.generate-btn:hover{
+  background-color: hsl(7, 87%, 53%);
+}
+
+.file-input-thumbnail{
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(79, 79, 79, 0.668);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background-color: rgba(96, 95, 95, 0.288);
+  object-fit: cover;
+}
+
+.input-btn{
+  background-color: rgba(96, 95, 95, 0.288);
+  color: white;
+  opacity: 0.8;
+  font-size: 12px;
+  font-family: Inconsolata;
+  font-weight: 200;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+

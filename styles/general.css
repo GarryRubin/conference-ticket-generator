@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding-bottom: 100px;
+  min-height: 750px;
+  font-family: Inconsolata;
+  color: white;
+  background-image: url('../assets/images/background-desktop.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  position: relative;    
+}
+
+p{
+  margin: 5px 0;
+}
+
+.pattern-circle{
+  position: absolute;
+  height: 170px;
+  top: 350px;
+  right: 150px;
+}
+
+.pattern-lines{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.pattern-squiggly-line-top{
+  position: absolute;
+  height: 150px;
+  right: 0;
+  top: 50px;
+}
+
+.pattern-squiggly-line-bottom{
+  position: fixed;
+  height: 300px;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+.logo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  
+}
+.logo-text{
+  font-size: 20px;
+  font-weight:800;
+}
+.logo-img{
+  height: 20px;
+}
+
+

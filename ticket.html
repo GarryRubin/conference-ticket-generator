@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon-info.svg">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="styles/ticket.css">
+  <link rel="stylesheet" href="styles/general.css">
+</head>
+
+<body>
+  <img class="pattern-circle" src="assets/images/pattern-circle.svg">
+  <img class="pattern-lines" src="assets/images/pattern-lines.svg">
+  <img class="pattern-squiggly-line-top" src="assets/images/pattern-squiggly-line-top.svg">
+  <img class="pattern-squiggly-line-bottom" src="assets/images/pattern-squiggly-line-bottom-desktop.svg">
+
+  <div class="logo-box">
+    <img class="logo-img" src="assets/images/logo-mark.svg">
+    <p class="logo-text">Coding Conf</p>
+  </div>
+
+  <div class="title-box">
+    <h1>Congrats, <span class="title-span-name js-title-name">Jonathat Kristof</span>! Your ticket is ready</h1>
+    <p>We have emailds your ticket to <span class="js-title-email" style="color: hsl(7, 86%, 67%);">jonathat@email.com</span> and will send
+      updates in the run up to the event.</p>
+  </div>
+
+  <div class="ticket-box">
+    <div class="ticket-left">
+      <div class="logo-box">
+        <img class="logo-img" src="assets/images/logo-mark.svg">
+        <p class="logo-text">Coding Conf</p>
+      </div>
+      <p class="ticket-date-location js-ticket-date-location">Jan 31, 2025 / Austin, TX</p>
+      <div class="ticket-owner">
+        <img class="js-avatar-img avatar-img" src="assets/images/image-avatar.jpg">
+        <div>
+          <p class="ticket-name js-ticket-name">Jonathat Kristof</p>
+          <img class="github-icon" src="assets/images/icon-github.svg">
+          <p class="github-username js-github-username">@jonathankristof0101</p>
+        </div>
+      </div>
+    </div>
+    <div class="ticket-right">
+      <p class="ticket-number js-ticket-number">#01609</p>
+    </div>
+  </div>
+  <script src="scripts/ticket.js"></script>
+</body>
+
+</html>

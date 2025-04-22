@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon-info.svg">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/general.css">
+</head>
+
+<body>
+  <img class="pattern-circle" src="assets/images/pattern-circle.svg">
+  <img class="pattern-lines" src="assets/images/pattern-lines.svg">
+  <img class="pattern-squiggly-line-top" src="assets/images/pattern-squiggly-line-top.svg">
+  <img class="pattern-squiggly-line-bottom" src="assets/images/pattern-squiggly-line-bottom-desktop.svg">
+
+  <div class="logo-box" draggable="true">
+    <img class="logo-img" src="assets/images/logo-mark.svg">
+    <p class="logo-text">Coding Conf</p>
+  </div>
+  <div class="title-box">
+    <h1>Your Journey to Coding Conf 2025 Starts here!</h1>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+  </div>
+
+  <form class="details-container">
+    <div>
+      <label for="file-input" class="details-name">Upload Avatar</label>
+      <div class="file-input-box">
+        <input type="file" accept="image/png, image/jpg" class="file-input" id="file-input" required>
+        <img class="upload-icon" src="assets/images/icon-upload.svg">
+        <p class="upload-instruction-1">Drag and drop or click to upload</p>
+        <!-- <div class="uploaded-image"></div> -->
+      </div>
+      <p class="upload-instruction-2">&#9432; Upload your photo (JPG, PNG, max size: 500KB).</p>
+    </div>
+
+    <div>
+      <label htmlFor="text-input" class="details-name">Full Name</label>
+      <input id="text-input" type="text" class="js-name-input" required>
+    </div>
+
+    <div>
+      <p class="details-name">Email Address</p>
+      <input type="email" name="email" class="js-email-input" placeholder="example@email.com" required>
+    </div>
+
+    <div>
+      <p class="details-name">GitHub Usrname</p>
+      <input type="text" class="js-github-name-input" placeholder="@yourusername" required>
+    </div>
+
+    <button class="generate-btn js-generate-btn" type="submit" >Generate my ticket</button>
+
+  </form>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
