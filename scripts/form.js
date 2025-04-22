@@ -55,7 +55,7 @@ function updateFileInputBox(fileInputBox, file){
   
   if(file.type.startsWith('image/')){
     const reader = new FileReader();
-    //build in obj allowing to read files
+    //build in obj allowing to read files.
     
     reader.readAsDataURL(file);
     reader.onload = () => {
